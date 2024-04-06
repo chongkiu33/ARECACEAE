@@ -1,0 +1,295 @@
+body{
+    margin:0;
+    width: 100vw;
+    height: 270vh;
+    background-image: linear-gradient(to bottom, #6fba2c 30%,  #075e33 40%, #6fba2c);
+    
+    overflow-x: hidden;
+    overflow-y:scroll;
+    
+    
+}
+
+#bigcontainer{
+    transform: rotateX(-10deg);
+    transform-style: preserve-3d ;
+    
+    
+}
+
+#container{
+    transform:rotateY(25deg) translateX(25vw) translateY(10vw);
+    transform-style: preserve-3d ;
+   transition: none;
+    
+    
+}
+
+
+
+
+#box{
+
+    transform: translateY(-10vh) translateX(19vw) translateZ(-3vw);
+    
+    transform-style: preserve-3d ;
+    
+}
+
+#box2{
+    transform: rotateY(-45deg) translateY(25vh);
+
+  
+}
+
+#box3{
+  
+    transform: rotateY(-225deg) translateY(10vh);
+
+
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d ;
+    transition:2s;
+    
+}
+
+
+
+
+.box > div{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition:2s;
+    
+    
+
+    
+}
+
+.up{
+    width: 6vw;
+    height: 6vw;
+    background:rgb(253, 252, 252);
+    transform: translateY(-3vw) translateZ(3vw) translateX(3vw)  rotateX(90deg);
+}
+
+.down{
+    width: 6vw;
+    height: 6vw;
+    background:rgb(245, 242, 242);
+    transform: translateY(117vw) translateZ(3vw) translateX(3vw)  rotateX(90deg);
+}
+
+.left{
+    width: 6vw;
+    height: 120vw;
+    background:rgb(222, 208, 208);
+    transform: translateX(0vw) translateZ(3vw)  rotateY(90deg);
+    
+}
+
+.right{
+    width: 6vw;
+    height: 120vw;
+    background:rgb(235, 221, 221);
+    transform: translateX(6vw) translateZ(3vw) rotateY(90deg);
+    
+}
+
+.front{
+    width: 6vw;
+    height: 120vw;
+    background: rgb(224, 223, 223);
+    transform: translateZ(6vw) translateX(3vw);
+}
+
+
+.behind{
+    width: 6vw;
+    height: 120vw;
+    background:rgb(211, 207, 207);
+    transform: translateZ(0px) translateX(3vw);
+}
+
+.aFront{
+    
+    transform: translateY(-12vh)  translateX(-3vw);
+    
+    
+}
+
+.aFront:hover{
+    animation: movea 2s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movea{
+    0% {transform: translateY(-12vh)  translateX(-3vw);}
+    50% {transform: translateY(-12vh)  translateX(-6vw);}
+    100% {transform: translateY(-12vh)  translateX(-3vw);}
+
+    
+}
+
+.rectangle{
+    width: 20vw;
+    height: 5vw;
+    background: #fffed9;
+    position: relative;
+    
+    transform-style: preserve-3d ;
+    text-align: right;
+    font-size: 1vw;
+    
+    
+}
+
+.triangle-right{
+    width: 0;
+    height: 0;
+    border-top:  2.5vw solid transparent;
+    border-right:  5vw solid #fffed9;
+    border-bottom:  2.5vw solid transparent;
+    
+    
+    transform-style: preserve-3d ;
+    
+}
+
+
+
+
+.content{
+    width: 46vw;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    font-size: 1vw;
+    color: #414141;
+}
+
+.caption{
+    margin-right: 1.5vw;
+    margin-top: 0.5vh;
+    
+    
+}
+
+figure {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin #7f7f7f solid;
+    margin: 0.5em;
+    padding: 0.5em;
+    background:#f9f8dc;
+  }
+  img.scaled {
+    width: 100%;
+  }
+
+
+h3{
+    margin-top: 0.1vh;
+    
+    
+}
+
+span{
+    color: #949494;
+}
+
+
+
+.ant {
+    position:absolute;
+    background-image:url("https://ianparberry.files.wordpress.com/2013/02/antwalk.gif");
+    background-size: cover;
+    scale: 170%;
+   
+  }
+  
+  .raid-logo {
+    display:block;
+    margin:auto;
+    margin-top:50px;
+  }
+
+
+#navigation{
+    position: fixed;
+    right: 1vmin;
+    top: 12vmin;
+    mix-blend-mode:luminosity;
+   
+}
+
+.navigat{
+    display: flex;
+    opacity: 0.9;
+    color: #7daf46;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 0.3vmin;
+}
+.rec{
+    width: 16vmin;
+    height: 2.8vmin;
+    background: #fff;
+    position: relative;
+    
+   
+    
+}
+
+.tri{
+    width: 0;
+    height: 0;
+    border-top:  1.4vmin solid transparent;
+    border-right:  2.8vmin solid #fff;
+    border-bottom:  1.4vmin solid transparent;
+}
+
+.navigat:hover{
+    animation: moveb 1s ;
+}
+  
+
+@keyframes moveb{
+    0% {transform:  translateX(0vmin);}
+    100% {transform: translateX(-3vmin);}
+    
+
+    
+}
+  
+#reddot{
+    width: 9vmin;
+    height: 9vmin;
+    border-radius: 50%;
+    background-color: red;
+    position: fixed;
+    right: 1vmin;
+    top: 2vmin;
+    line-height: 9vmin;
+    text-align: center;
+}
+
+#reddot:hover{
+    animation: flip 0.5s infinite;
+}
+
+@keyframes flip {
+    0%{opacity: 100%;}
+    50%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+  

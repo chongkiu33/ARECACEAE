@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<style>
+    
+    #board{
+        width: 30vmin;
+        height: auto;
+        position: fixed;
+        background-color: #fff;
+        border-radius: 0.5vw;
+        margin-left: 2vmin;
+        margin-top: 2vmin;
+        transition: transform 1s; 
+    }
+
+    #board div{
+        background-color: #027246;
+        width: 29vmin;
+        
+        border-radius: 0.5vmin;
+        margin: 0.5vmin;
+        font-size: 2vmin;
+        color: #fff;
+    }
+
+    #board:hover{
+        transform: scale(1.2) translateX(5vmin) translateY(4vmin);
+    }
+
+</style>
+<body>
+    <main>
+    <div id="bigcontainer">
+        
+        <div id="container">
+       
+
+        <div id="box" class="box">
+            <div class="up"></div>
+            <div class="down"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="front"></div>
+            <div class="behind"></div>
+         </div>
+    
+ 
+        
+        </div>
+
+     
+     
+    </div>
+
+    <div id="board" >
+        <div id="boardtitle" >
+            <span style="margin-left: 1vmin;color: #fff;">ARECACEAE</span>
+        </div>
+
+        <div align="center" style="height: 18vmin;">
+            <img style="width: 80%;margin-top: 2%;" src="image/arrow.png">
+        </div>
+     </div>
+
+     <div id="navigation">
+        <div id="a1" class="navigat" ><div class='tri'></div><div class='rec'>Intro&Etymology </div></div>
+        <div id="a2" class="navigat"><div class='tri'></div><div class='rec'>Morphology</div></div>
+        <div id="a3" class="navigat"><div class='tri'></div><div class='rec'>Range and habitat</div></div>
+        <div id="a4" class="navigat"><div class='tri'></div><div class='rec'>Taxonomy</div></div>
+        <div id="a5" class="navigat"><div class='tri'></div><div class='rec'>Selected genera</div></div>
+        <div id="a6" class="navigat" ><div class='tri'></div><div class='rec'>Evolution</div></div>
+        <div id="a7" class="navigat"><div class='tri'></div><div class='rec'>Uses</div></div>
+        <div id="a8" class="navigat" ><div class='tri'></div><div class='rec'>Endangered species</div></div>
+        <div id="a9" class="navigat"><div class='tri'></div><div class='rec'>Symbolism</div></div>
+     </div>
+
+
+
+     <div id="reddot">Rotate</div>
+
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     <span class="ant"></span>
+     
+    
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

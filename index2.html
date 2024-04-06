@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <style>
+        
+        #arrowContainer{
+            
+        }
+
+        #aFront{
+            width: 300px;
+            height: 100px;
+            
+            transform-style: preserve-3d ;
+        }
+
+        .rectangle{
+            width: 200px;
+            height: 100px;
+            background: #f00;
+            position: relative;
+            transform:translateX(150px);
+            transform-style: preserve-3d ;
+        }
+
+        .triangle-right{
+            width: 0;
+            height: 0;
+            border-top:  50px solid transparent;
+            border-bottom:  50px solid transparent;
+            border-left:  100px solid #f00;
+            transform:translateX(150px);
+            transform-style: preserve-3d ;
+            
+        }
+
+        .triangle-right2{
+            width: 0;
+            height: 0;
+            border-top:  50px solid transparent;
+            border-bottom:  50px solid transparent;
+            border-left:  100px solid aqua;
+            
+        }
+
+        
+
+        
+
+        #aBack{
+            transform: translateZ(-10px);
+            transform-style: preserve-3d ;
+        }
+
+        #aLeft{
+            width: 10px;
+            height: 100px;
+            background-color: black;
+            transform: rotateY(90deg) translateX(5px) translateZ(-5px);
+            transform-style: preserve-3d ;
+        }
+
+        #aTop{
+            width: 200px;
+            height: 10px;
+            background-color: green;
+            transform: rotateX(90deg) translateZ(5px) translateY(-5px);
+            transform-style: preserve-3d ;
+        }
+
+        #aBottom{
+            width: 200px;
+            height: 10px;
+            background-color: green;
+            transform: rotateX(90deg) translateZ(-95px) translateY(-5px);
+            transform-style: preserve-3d ;
+        }
+        #arrowContainer > div{
+            opacity: 80%;
+        }
+
+        
+        
+    </style>
+    <main>
+        <div id="arrowContainer">
+
+        <div id="aFront" style="display: flex;position: absolute;">
+        <div class="rectangle"></div>
+        <div class="triangle-right"></div>
+        </div>
+
+        
+
+        
+
+        </div>
+     </div>
+
+
+    </main>
+
+    
+</body>
+</html>
