@@ -3,7 +3,7 @@ body{
     width: 100vw;
     height: 270vh;
     background-image: linear-gradient(to bottom, #6fba2c 30%,  #075e33 40%, #6fba2c);
-    
+    font-family:'Helvetica';
     overflow-x: hidden;
     overflow-y:scroll;
     
